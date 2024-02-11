@@ -7,13 +7,10 @@ fn main() {
         .open()
         .expect("Failed to open port");
 
-    // Initialize printer
     initialize_printer(&mut *port);
 
-    // Set line spacing
     set_line_spacing(&mut *port, 24); // Example: Set line spacing to 24/180 inch
 
-    // Print text
     print_text(&mut *port, "Hello, World!\n");
 }
 
